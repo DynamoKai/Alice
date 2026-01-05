@@ -1,4 +1,27 @@
-.synopsis {
-  background-color: blueviolet;
+.page {
+  background-color: rgb(82, 93, 243);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.synopsis__guts {
+  display: flex;
+  justify-content: space-between; /* Horizontal */
+  align-items: baseline; /* Vertical */
+  height: 200px; /* Requires a defined height to see vertical centering */
+  width: auto;
+}
+
+.synopsis__card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px); /* Modern frosted glass effect */
+  border: 3px solid #1e0baf79;
+  border-radius: 40px;
+  padding: 18px;
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.05);
+}
+
+.synopsis__card h1 {
+  margin: 0 0 10px 0;
+  color: #706051;
+  text-align: center;
 }
