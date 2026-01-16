@@ -3,11 +3,11 @@
    Change these colors here to update the whole site.
    ========================================= */
 :root {
-  --bg-color: #f4f4f9; /* Light grey background */
-  --card-bg: #ffffff; /* White cards */
-  --text-main: #333333; /* Dark grey text (easier on eyes than black) */
-  --accent-color: #2c3e50; /* Navy Blue for headers */
-  --link-color: #3498db; /* Bright Blue for links */
+  --bg-color: #de95ea; /* Light grey background */
+  --card-bg: #602d9e; /* White cards */
+  --text-main: #0a0303; /* Dark grey text (easier on eyes than black) */
+  --accent-color: #054f24; /* Navy Blue for headers */
+  --link-color: #7a1010; /* Bright Blue for links */
   --font-main: system-ui, -apple-system, sans-serif; /* Uses your computer's default clean font */
 }
 
@@ -25,7 +25,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-main);
   font-family: var(--font-main);
-  line-height: 1.6; /* Adds breathing room to text */
+  line-height: 1.8; /* Adds breathing room to text */
 }
 
 /* =========================================
@@ -37,7 +37,7 @@ body {
   display: flex; /* Aligns items in a row */
   justify-content: space-between; /* Pushes Logo left, Links right */
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .logo {
@@ -86,6 +86,16 @@ hr {
   margin: 3rem 0;
 }
 
+.by {
+  color: #ff0429;
+  font-size: 0.9rem;
+}
+
+.curious {
+  color: #de95ea;
+  font-family: cursive;
+}
+
 /* =========================================
    5. THE BOOKSHELF GRID
    This uses CSS Grid to make cards responsive automatically.
@@ -100,7 +110,7 @@ hr {
 .card {
   background: var(--card-bg);
   padding: 1.5rem;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 7px; /* Rounded corners */
   border: 1px solid #ddd;
   transition: transform 0.2s ease;
 }
