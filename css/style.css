@@ -3,11 +3,11 @@
    Change these colors here to update the whole site.
    ========================================= */
 :root {
-  --bg-color: #de95ea; /* Light grey background */
-  --card-bg: #602d9e; /* White cards */
-  --text-main: #0a0303; /* Dark grey text (easier on eyes than black) */
-  --accent-color: #054f24; /* Navy Blue for headers */
-  --link-color: #7a1010; /* Bright Blue for links */
+  --bg-color: #f4f1ea; /* Light grey background */
+  --card-bg: #c6a45c; /* White cards */
+  --text-main: #2b2b2b; /* Dark grey text (easier on eyes than black) */
+  --accent-color: #703a3a; /* Navy Blue for headers */
+  --link-color: #3a4b70; /* Indigio Blue for links */
   --font-main:
     system-ui, -apple-system, sans-serif; /* Uses your computer's default clean font */
 }
@@ -69,7 +69,11 @@ body {
 
 .hero {
   text-align: center;
-  margin-bottom: 3rem;
+  text-decoration: underline;
+  font-size: 35px;
+  color: #c6a45c;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: bottom 3rem;
 }
 
 h1,
@@ -88,12 +92,12 @@ hr {
 }
 
 .by {
-  color: #ff0429;
-  font-size: 0.9rem;
+  color: #f8f8ff;
+  font-size: 1rem;
 }
 
 .curious {
-  color: #de95ea;
+  color: #b065bb;
   font-family: cursive;
 }
 
@@ -176,3 +180,58 @@ hr {
 /* =========================================
    8. BOOK INNARDS
    ========================================= */
+
+.paragraph-list {
+  display: flex;
+  text-wrap: none;
+  flex-direction: column;
+  padding-top: 5%;
+}
+
+/* =========================================
+   8a. CHAPTER INTRO
+   ========================================= */
+
+.chapter-start-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: visible;
+
+  /* FLEXBOX FOR CENTERING TEXT */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: black;
+  text-shadow: 0px 0px 10px #c6a45c;
+  padding: 20px;
+}
+
+/* BACKGROUND IMAGE LAYER (PSEUDO-ELEMENT) */
+.chapter-start-banner::before {
+  content: "";
+  position: absolute;
+  top: -7%;
+  left: 0;
+  width: 100%;
+  height: 115%;
+
+  /* image styles */
+  background-image: url("../assets/queen-mary_Smithsonian.png");
+  background-repeat: no-repeat;
+  background-position: 55% 30%;
+  background-size: 300%;
+
+  /* opacity only affects this layer */
+
+  opacity: 0.2;
+  z-index: 1;
+}
+
+/* The content layer */
+.chapter-start-banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
