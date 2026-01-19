@@ -8,7 +8,8 @@
   --text-main: #0a0303; /* Dark grey text (easier on eyes than black) */
   --accent-color: #054f24; /* Navy Blue for headers */
   --link-color: #7a1010; /* Bright Blue for links */
-  --font-main: system-ui, -apple-system, sans-serif; /* Uses your computer's default clean font */
+  --font-main:
+    system-ui, -apple-system, sans-serif; /* Uses your computer's default clean font */
 }
 
 /* =========================================
@@ -144,4 +145,30 @@ hr {
 .date {
   color: #666;
   font-size: 0.9rem;
+}
+
+/* =========================================
+   7. BOOK TABLE OF CONTENTS
+   ========================================= */
+.chapter-list {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.chapter-list li {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.chapter-list a {
+  text-decoration: none;
+  color: var(--text-main);
+  display: flex;
+  justify-content: space-between; /* Pushes date to the right */
+}
+
+.chapter-list a:hover {
+  color: var(--link-color);
 }
