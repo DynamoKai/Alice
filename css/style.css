@@ -29,6 +29,16 @@ body {
   line-height: 1.8; /* Adds breathing room to text */
 }
 
+.thought {
+  font-style: italic;
+  color: #555;
+}
+.rabbit-hole {
+  border-left: 3px solid var(--accent-color);
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
 /* =========================================
    3. NAVIGATION BAR
    ========================================= */
